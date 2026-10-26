@@ -1,0 +1,7 @@
+# Keep credentials and runtime data out of source control.
+firebase.local.cmd
+*.pem
+*service-account*.json
+*adminsdk*.json
+data/
+target/

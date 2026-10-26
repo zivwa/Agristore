@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8080}
+  address: ${BIND_ADDRESS:127.0.0.1}
+  error:
+    include-message: never
+    include-exception: false
+
+app:
+  firebase:
+    enabled: ${FIREBASE_ENABLED:true}
+    project-id: ${FIREBASE_PROJECT_ID:agristore-dev}
+    database-id: ${FIRESTORE_DATABASE_ID:default}
+  catalog-source: ${CATALOG_SOURCE:demo}
+  cors-origins: ${CORS_ORIGINS:http://localhost:5173,http://127.0.0.1:5173}
+
+---
+app:
+  auth-mode: ${AUTH_MODE:firebase-commerce}
+  local-data: ${LOCAL_DATA:./data/store.json}
+  test-payments: ${TEST_PAYMENTS:false}
+  admin-email: ${ADMIN_EMAIL:}
+  admin-password: ${ADMIN_PASSWORD:}
+
+  firestore-store: ${FIRESTORE_STORE:storefront-v2}

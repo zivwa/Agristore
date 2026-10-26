@@ -1,0 +1,8 @@
+Validation for this ZIP:
+- Frontend merge-conflict markers resolved.
+- Frontend production build passed.
+- Backend compiled and executable JAR rebuilt.
+- 16 backend tests passed, including Firebase identity/roles, matched commerce contracts and atomic Firestore writes (cloud operations mocked).
+- No live backend started; port remains 8080.
+- No live cloud data changed during this package update.
+- Existing Java/Windows socket issue remains documented in README.md; live server connectivity has not been verified here.
